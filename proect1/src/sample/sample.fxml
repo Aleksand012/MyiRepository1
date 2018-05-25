@@ -6,12 +6,16 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-    <TextArea GridPane.vgrow="ALWAYS"/>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" >
     <HBox>
-    <TextField fx:id="Wvod"/>
-    <Button fx:id="Button1" text="РАСЧИТАТЬ"/>
+        <TextField fx:id="vod"/>
+        <Button fx:id="Button1" text="РАСЧИТАТЬ"/>
+    </HBox>
+    <HBox>
+    <TextArea fx:id="bNds"/>
+
     </HBox>
 
-</GridPane>
+</VBox>
